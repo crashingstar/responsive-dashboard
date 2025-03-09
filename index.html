@@ -100,6 +100,169 @@
 	</svg>
 
 	<!-- Start coding here -->
+	<header id="main-header">
+		<nav>
+			<button id="main-header__sidebar-toggle">
+				<svg id="toggle-icon-menu">
+					<use xlink:href="#icon-menu">
+				</svg>
+				<svg id="toggle-icon-close">
+					<use xlink:href="#icon-close">
+				</svg>
+			</button>
+			<ul>
+				<li id="main-header__logo">
+					<a href="index.html">
+						<svg>
+							<use xlink:href="#logo"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg>
+							<use xlink:href="#icon-house"></use>
+						</svg>
+						<span>local-wp</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg>
+							<use xlink:href="#icon-top-comments"></use>
+						</svg>
+						<span>2</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<svg>
+							<use xlink:href="#icon-add"></use>
+						</svg>
+						<span>New</span>
+					</a>
+				</li>
+			</ul>
+
+			<a href="#">
+				<span>Welcome, admin</span>
+				<svg>
+					<use xlink:href="#icon-user"></use>
+				</svg>
+			</a>
+
+		</nav>
+	</header>
+
+	<section id="main">
+		<div id="overlay"></div>
+
+		<div id="sidebar">
+			<button id="sidebar_collapse">
+				<svg>
+					<use xlink:href="#icon-collapse"></use>
+				</svg>
+				<span>Collapse menu</span>
+			</button>
+
+			<nav id="sidebar__nav">
+				<ul>
+					<li class="menu-heading">
+						<span>Manage</span>
+					</li>
+					<li>
+						<a href="#" class="active">
+							<svg>
+								<use xlink:href="#icon-dashboard"></use>
+							</svg>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#icon-appearance"></use>
+							</svg>
+							<span>Appearance</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#icon-plugins"></use>
+							</svg>
+							<span>Plugins</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#icon-users"></use>
+							</svg>
+							<span>Users</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#icon-settings"></use>
+							</svg>
+							<span>Settings</span>
+						</a>
+					</li>
+
+					<li class="menu-heading">
+						<span>Content</span>
+					</li>
+					<li>
+						<a href="#">
+							<svg>
+								<use xlink:href="#icon-posts"></use>
+							</svg>
+							<span>Posts</span>
+						</a>
+						<li>
+							<a href="#">
+								<svg>
+									<use xlink:href="#icon-media"></use>
+								</svg>
+								<span>Media</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg>
+									<use xlink:href="#icon-pages"></use>
+								</svg>
+								<span>Pages</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg>
+									<use xlink:href="#icon-comments"></use>
+								</svg>
+								<span>Comments</span>
+							</a>
+						</li>
+					</li>
+				</ul>
+			</nav>
+			<div id="sidevar__theme-switcher">
+				<svg id="sidebar__theme-switcher__sun">
+					<use xlink:href="#icon-sun"></use>
+				</svg>
+				<svg id="sidebar__theme-switcher__moon">
+					<use xlink:href="#icon-moon"></use>
+				</svg>
+			</div>
+		</div>
+
+		<div id="main-content">
+			<p id="main-content__container"></p>
+		</div>
+	</section>
 
 	<script src="app.js"></script>
 </body>
