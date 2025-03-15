@@ -291,7 +291,27 @@ body.sidebar-open #overlay {
     cursor: pointer;
   }
 
-  #sidebar__collapse {
+  #sidebar__collapse svg {
     fill: var(--primary-base);
+  }
+
+  body.sidebar-collapse .menu-heading,
+  body.sidebar-collapse #sidebar span,
+  body.sidebar-collapse #sidebar__theme-switcher {
+    display: none;
+  }
+
+  body.sidebar-collapse #sidebar a,
+  body.sidebar-collapse #sidebar__collapse {
+    width: 2.75rem;
+    justify-content: center;
+  }
+
+  body.sidebar-collapse #sidebar {
+    padding: 1.5rem 1.5rem;
+  }
+
+  body.sidebar-collapse #sidebar__collapse svg {
+    transform: rotate(180deg);
   }
 }

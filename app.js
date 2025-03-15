@@ -5,6 +5,14 @@ const sidebarToggle = () => {
 const sidebarTrigger = document.getElementById("main-header__sidebar-toggle");
 sidebarTrigger.addEventListener("click", sidebarToggle);
 
+// Sidebar collapse
+const sidebarCollapse = () => {
+  document.body.classList.toggle("sidebar-collapse");
+};
+
+const sidebarCollapseTrigger = document.getElementById("sidebar__collapse");
+sidebarCollapseTrigger.addEventListener("click", sidebarCollapse);
+
 // Theme switcher function
 const switchTheme = () => {
   // Get root element and data-theme value
